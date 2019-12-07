@@ -1,0 +1,423 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: "Open Sans", sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.row {
+    margin-right: 0px;
+}
+
+h1 {
+    color: #f6f6f6;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* NAVBAR SETTINGS */
+#mainNavbar {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+#mainNavbar .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #fcfcfc;
+    font-weight: 300;
+}
+
+#mainNavbar .nav-link:hover {
+    color: rgb(247, 205, 195);
+}
+
+#mainNavbar .navbar-brand {
+    color: #fcfcfc;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: rgb(247, 205, 195);
+}
+
+#mainNavbar button {
+    outline: none;
+}
+
+@media (max-width: 2000px) {
+    nav.other {
+      background: #222;
+    }
+  }
+
+/* change navbar background on collapse */
+@media (max-width: 768px) {
+    nav.other {
+      background: #222;
+    }
+  }
+
+.dropdown-item {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link {
+    display: block;
+    text-align: left;
+    padding: .5rem 1rem;
+}
+
+.navbar.scrolled {
+    background-color: rgba(41, 41, 41, 0.9);
+    transition: background 500ms;
+}
+
+
+/* JUMBOTRON SETTINGS */
+.jumbotron {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./lessonsetting.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+
+#splash h1, h2 {
+      color: white;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: center;
+  }
+
+#splash h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+#splash h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+#splasharrow {
+    font-size: 2rem;
+    color: white;
+}
+
+/* section {
+    width: 100%;
+    height: 100;
+} */
+
+.login {
+    background: #222;
+    padding: 80px 0 0 0;
+    /* height: 100vh; */
+    color: #f6f6f6;
+}
+
+.login a {
+    color: #222;
+}
+
+.signup{
+    background: #f6f6f6;
+    color: #222;
+    padding: 30px 0;
+    margin: 0;
+}
+
+/* CONTENT SETTINGS */
+#content {
+    /* height: 100vh; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+#content h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.2rem;
+    color: #666;
+    text-align: left;
+}
+
+#content p {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+/* iPad */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    #content h2 {font-size: 1.5rem;}
+    #content p {font-size: 0.8rem;}
+}
+
+/* iPhone */
+@media (max-width: 767px) {
+    #content h2 {font-size: 1.5rem;}
+    #content p {font-size: 0.8rem;}
+}
+
+.card-body {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+#contentMusic {
+    /* height: 100vh; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 0;
+    background: #222;
+}
+
+#contentMusic h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2.2rem;
+    color: #fcfcfc;
+    text-align: left;
+}
+
+#contentMusic p {
+    font-size: 14px;
+    color: #fcfcfc;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    #contentMusic h2 {font-size: 1.5rem;}
+    #contentMusic p {font-size: 0.8rem;}
+}
+
+#video {
+    border-top: 100px;
+}
+
+#videotitle h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+/* Animation */
+.fade {
+    opacity: 0;
+    transition: opacity 1s;
+    transform: translate(0, 20px); 
+    transition: all 1.5s;
+    }
+    
+.fade.visible { 
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.fadeLoad {
+    animation: fadein 2s;
+    /* transition: opacity 1s; */
+    transform: translate(0, 20px); 
+    /* transition: all 1.5s; */
+    }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* CONTACT SETTINGS */
+#contactform {
+    color: #fcfcfc;
+    font-size: 0.8rem;
+}
+
+/* input[type="text"],
+textarea.form-control {
+    border: none;
+    border-bottom: 1px solid #fcfcfc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+} */
+
+/* input[type="text"]:focus,
+select.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+} */
+
+
+/* MAP SETTINGS */
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/* FOOTER SETTINGS */
+#footersection {
+    font-size: .8rem;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    background-color: #222;
+    padding-left: 30px;
+    padding-right: 0px;
+    margin: 0;
+}
+
+#footersection ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footersection ul li {
+    font-size: 2rem;
+    list-style: none;
+    padding: 10px;
+}
+
+#footersection ul li a {
+    color: #f6f6f6;
+}
+
+#footersection ul li a:hover {
+    color: rgb(247, 205, 195);
+}
+
+#footersection p{
+    color: #f6f6f6;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+    padding: 0px;
+}
+
+#footersection p a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#footersection .login ul li a:hover{
+    color: rgb(247, 205, 195);
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    #footersection h2 {font-size: 1.5rem;}
+    #footersection {font-size: 0.7rem;}
+}
+
+#arrow {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+
+  #arrow:hover {
+    top: -10px;
+  }
+
+  #arrowdown {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+
+  #arrowdown:hover {
+    top: 10px;
+  }
+
+
+/* @media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+} */
+
+/* @media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+} */
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+    .navbar-nav > li {
+      float: none;
+      display: inline-block;
+    }
+    .navbar-nav > li.navbar-right {
+      float: right !important;
+    }
+  } */
